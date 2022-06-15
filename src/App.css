@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=IM+Fell+English+SC&family=Skranji&display=swap');
+
+
+h1 {
+  font-family: 'Skranji', cursive;
+  font-size: 45px;
+  position: relative;
+  animation-name: slide;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  background: -webkit-linear-gradient(blue, pink);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes slide {
+  0%   {top: -20px; left: 0%}
+  50%  {top: 0px; left: 20%}
+  100% {top: -20px; left: 0%}
+}
+
+.special {
+  background-color: rgba(118, 149, 177, 0.322);
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  background-color: rgb(118, 149, 177, 0.322);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order {
+  background-color: rgb(118, 149, 177, 0.322);
+  width: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  
+  padding: 25px;
+  color: rgba(109, 14, 87, 0.705);
+  font-family: 'Skranji', cursive;
+}
+
+p {
+  font-family: 'Skranji', cursive;
+  font-size: 35px;
+  color: rgba(109, 14, 87, 0.705);
+}
+
+.button {
+  font-size: 20px;
+  color: rgba(109, 14, 87, 0.705);
+  font-family: 'Skranji', cursive;
+}
+
+.select {
+  font-size: 20px;
+  color: rgba(109, 14, 87, 0.705);
+}
+
+.instruct {
+  font-size: 25px;
+  color: rgba(109, 14, 87, 0.705);
+}
+
+.plankton {
+  font-size: 25px;
+  color: rgba(109, 14, 87, 0.705);
+  font-family: 'Skranji', cursive;
+}
+
+.plankton input {
+  height: 25px;
+}
+
+.list {
+  font-size: 25px;
+  color: rgba(109, 14, 87, 0.705);
+  font-family: 'Skranji', cursive;
+}
+
+.order input {
+  height: 25px;
+}
+
+.everythingelse {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
