@@ -1,13 +1,9 @@
-import { useState } from 'react';
 import '../App.css';
 
-export default function InstructionsForm({ setInstructions, instructions }) {
-  const [instructionsForm, setInstructionsForm] = useState('');
+export default function InstructionsForm({ setInstructionsForm, instructionsForm, handleSubmit }) {
+ 
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    setInstructions([...instructions, instructionsForm]);
-  }
+ 
 
   return (
     <section className='order'>

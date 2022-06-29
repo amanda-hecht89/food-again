@@ -18,6 +18,12 @@ function App() {
   const [sideId, setSideId] = useState('side-1');
   const [orderName, setOrderName] = useState('');
   const [instructions, setInstructions] = useState([]);
+  const [instructionsForm, setInstructionsForm] = useState('');
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setInstructions([...instructions, instructionsForm]);
+  }
 
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
@@ -44,7 +50,7 @@ function App() {
         What do you want to eat.......
           </p>
           < hr />
-          <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
+          <InstructionsForm setInstructionsForm={setInstructionsForm} instructionsForm={instructionsForm} handleSubmit={handleSubmit} />
           <hr /><img src={'./images/krabs-2.png'} height='110' />
           <p>
         YAY MONEY!
